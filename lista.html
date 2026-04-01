@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      /* Cabeçalho principal */
+      h1 {
+        font-size: 2.5rem;
+        color: #00bcd4;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.8rem;
+        color: #00bcd4;
+        margin: 20px 0;
+        text-transform: uppercase;
+      }
+      ol,
+      ul,
+      dl {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        width: 100%;
+        max-width: 600px;
+      }
+      ol li,
+      ul li {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      ol li:hover,
+      ul li:hover {
+        transform: translateY(-5px);
+        background-color: #00bcd4;
+        color: #ffffff;
+      }
+
+      /* Lista de Definição */
+      dl dt {
+        font-weight: bold;
+        color: #00bcd4;
+        margin-top: 20px;
+      }
+
+      dl dd {
+        padding: 8px 16px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 8px;
+        transition:
+          transform 0.3s ease,
+          backgroud-color 0.3s ease;
+      }
+
+      dl dd:hover {
+        transform: translateY(-5px);
+        background-color: #00bcd4;
+        color: #ffffff;
+      }
+
+      h1:hover,
+      h2:hover,
+      ol:hover,
+      li:hover,
+      ul li:hover,
+      dl dd:hover {
+        box-shadow: 0 6px 12px rgb(0, 188, 212, 0, 3);
+      }
+
+      .portal {
+        margin: 2%;
+        padding: 2%;
+        background-color: rgb(251, 253, 255);
+        border-radius: 5%;
+      }
+
+      a {
+        margin: 45px;
+        text-decoration: double;
+        color: #00bcd4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Listas</h1>
+    <div class="portal">
+      <a href="tabela.html">Tabelas</a>
+      <a href="tagsNaoVisuais.html">Tags Não Visuais</a>
+      <a href="texto1.html">Texto 1</a>
+      <a href="texto2.html"> Texto 2</a>
+    </div>
+
+    <!-- Lista ordenada -->
+    <h2>Aprovados</h2>
+    <ol>
+      <li>Bia</li>
+      <li>Pedro</li>
+      <li>Ana</li>
+      <li>João</li>
+    </ol>
+
+    <!-- Lista não ordenada -->
+    <ul>
+      <li>Queijo</li>
+      <li>Leite</li>
+      <li>Arroz</li>
+      <li>Pão</li>
+    </ul>
+
+    <!-- Lista de definição -->
+    <h2>Principais termos do glossário de Cloud Coumputing</h2>
+    <dl>
+      <dt>BaaS</dt>
+      <dd>Backend Como Serviço</dd>
+      <dt>IaaS</dt>
+      <dd>Infraestrutura Como Serviço</dd>
+      <dt>PaaS</dt>
+      <dd>Plataforma Como Serviço</dd>
+      <dt>SaaS</dt>
+      <dd>Software Como Serviço</dd>
+    </dl>
+  </body>
+</html>
