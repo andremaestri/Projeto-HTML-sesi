@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fomr.css">
+    <title>Formulário</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Formulário</h1>
+
+        <form Method="POST" action="http://localhost:3003/usuarios">
+            <input type="hidden" name="id" value="3">
+
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite a sua senha">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Conte um pouco sobre você"></textarea>
+            </div>
+            <fieldset class="form-group">
+                <legend>Tipo de usuário</legend>
+                <label for="admin">
+                    <input type="radio" name="tipo" id="admin" value="admin"> Admin
+                </label>
+                <label for="regular">
+                    <input type="radio" name="tipo" id="regular" value="regular"> Regular
+                </label>
+                <label for="professor">
+                    <input type="radio" name="tipo" id="professor" value="professor"> professor
+                </label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="Ativo">
+                    <input type="checkbox" name="Ativo" id="Ativo">
+                    Ativo
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="Estado">
+                    <select name="" id="id">
+                        <option value="">Selecione</option>
+                        <option value="ac">Acre</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceara</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="mg">Minas Geais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pr">Parána</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="sp">São Paulo</option>
+
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="interesses">Interesses</label>
+                <select name="Interesses" id="Interesses" multiple-size="7">
+                    <option value="js">Javascript</option>
+                    <option value="java">Java</option>
+                    <option value="php">PHP</option>
+                    <option value="python">python</option>
+                    <option value="go">Go</option>
+                    <option value="c">C</option>
+
+                </select>
+            </div>
+
+            <div class="form-group-buton">
+                <button type="submit">Incluir</button formaciom=http://locallhost;3003/usuarios/3 type=submit>
+               
+            </div>
+            <div class="form-group-buton">
+                <button>Alterar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
