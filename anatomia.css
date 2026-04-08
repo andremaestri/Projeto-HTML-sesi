@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(251, 253, 255);
+    color: rgb(134, 208, 211);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header{
+    background-color: rgba(100, 148, 237, 0.301);
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+nav{
+    background-color: rgba(100, 148, 237, 0.301);
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+#conteudo{
+    padding: 30px;
+    background-color: white;
+    margin: 20px auto;
+    width: 80% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb( 0, 0, 0, 0.1);
+}
+
+aside{
+    background-color: rgba(151, 238, 209, 0.76);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+footer{
+    background-color: rgba(69, 203, 248, 0.459);
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+}

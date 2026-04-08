@@ -1,108 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-      /* Estilo Geral da tabela */
-      table {
-        width: 80%;
-        margin: 50px auto;
-        border-collapse: collapse;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
-      }
+        /* Estilo Geral da tabela */
+        table{
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
 
-      caption {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: #00438a;
-        margin-bottom: 20px;
-      }
+        caption{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00438a;
+            margin-bottom: 20px;
+        }
 
-      th,
-      td {
-        padding: 20px;
-        text-align: left;
-        font-size: 1rem;
-        border-bottom: 1px solid #00438a;
-      }
+        th, td{
+            padding: 20px;
+            text-align: left;
+            font-size: 1rem;
+            border-bottom: 1px solid #00438a;
+        }
 
-      th {
-        background-color: #00438a;
-        color: #fff;
-        text-transform: uppercase;
-      }
+        th{
+            background-color: #00438a;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+        thead tr{
+            border-bottom: 3px solid #333;
+        }
 
-      thead tr {
-        border-bottom: 3px solid #333;
-      }
+        tbody tr:hover{
+            background-color: #e0f7fa;
+        }
 
-      tbody tr:hover {
-        background-color: #e0f7fa;
-      }
+        tfoot{
+            background-color: #e0f7fa;
+        }
 
-      tfoot {
-        background-color: #e0f7fa;
-      }
-
-      tfoot td {
-        border-top: 2px solid #333;
-      }
-
-      .portal {
-        margin: 2%;
-        padding: 2%;
-        background-color: rgb(251, 253, 255);
-        align-items: center;
-      }
-
-      a {
-        margin: 45px;
-        text-decoration: double;
-        color: #00bcd4;
-      }
+        tfoot td{
+            border-top: 2px solid #333;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <table>
-      <caption>
-        Produtos
-      </caption>
-      <thead>
-        <tr>
-          <th>Produtos</th>
-          <th>Preço</th>
-          <th>Quantidade</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>iPad</td>
-          <td>R$ 3.289,00</td>
-          <td>5</td>
-          <td>R$ 16.455,00</td>
-        </tr>
-        <tr>
-          <td>Sansung S26</td>
-          <td>R$ 5.500,00</td>
-          <td>3</td>
-          <td>R$ 16.500,00</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <td colspan="3">Total</td>
-        <td>R$ 32.955,00</td>
-      </tfoot>
-    </table>
+        <caption>Produtos</caption>
+        <thead>
+            <tr>
+                <th>Produtos</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>iPad</td>
+                <td>R$ 3.289,00</td>
+                <td>5</td>
+                <td>R$ 16.455,00</td>
+            </tr>
+            <tr>
+                <td>Sansung S26</td>
+                <td>R$ 5.500,00</td>
+                <td>3</td>
+                <td>R$ 16.500,00</td>
+            </tr>
 
-    <div class="portal">
-      <a href="lista.html">Lista</a>
-      <a href="tagsNaoVisuais.html">Tags Não Visuais</a>
-      <a href="texto1.html">Texto 1</a>
-      <a href="texto2.html"> Texto 2</a>
-    </div>
-  </body>
+        </tbody>
+        <tfoot>
+            <td colspan="3">Total</td>
+            <td>R$ 32.955,00</td>
+        </tfoot>
+
+    </table>
+</body>
 </html>
